@@ -1,0 +1,13 @@
+﻿@model IndexViewModelSomeModel;
+
+<form method="post">
+    <input name="DateStartInput" asp-for="@(Model.FilterViewModel.SelectedDateStart)" type='text' />
+    <input name="DateFinishInput" asp-for="@(Model.FilterViewModel.SelectedDateFinish)" type='text' />
+    <input type="submit" value="ФильтрPOST" class="btn btn-default" />
+</form>
+
+<form method="get">
+    <input name="DateStartInput" asp-for="@(Model.FilterViewModel.SelectedDateStart)" type='text' />
+    <input name="DateFinishInput" asp-for="@(Model.FilterViewModel.SelectedDateFinish)" type='text' />
+    <input type="submit" value="ФильтрGET" class="btn btn-default" />
+</form>
